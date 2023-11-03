@@ -6,7 +6,7 @@ on:
     branches: ['main']
 jobs:
   build:
-    uses: familysync/core-pipelines/.github/workflows/dotnet-docker-publish.yaml@main
+    uses: familysync/core-pipelines/.github/workflows/publish.yaml@main
     secrets: inherit
     with:
       repository: "familysync/authentication"
