@@ -3,7 +3,7 @@ ARG version
 WORKDIR /src
 
 COPY ["FamilySync.Services.Authentication/FamilySync.Services.Authentication.csproj", "FamilySync.Services.Authentication/"]
-COPY ["NuGet.config", "FamilySync.Services.Authentication/"]
+COPY ["NuGet.Config", "FamilySync.Services.Authentication/"]
 
 RUN dotnet restore "FamilySync.Services.Authentication/FamilySync.Services.Authentication.csproj"
 
