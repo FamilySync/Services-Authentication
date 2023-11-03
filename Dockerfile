@@ -6,7 +6,7 @@ WORKDIR /src
 COPY ["FamilySync.Services.Authentication/FamilySync.Services.Authentication.csproj", "FamilySync.Services.Authentication/"]
 COPY ["NuGet.Config", "FamilySync.Services.Authentication/"]
 
-RUN sed -i 's/ORG_FULL_ACCESS_TOKEN/'"$ORG_FULL_ACCESS_TOKEN"'/g' NuGet.Config
+RUN sed -i 's/ORG_FULL_ACCESS_TOKEN/'"$ORG_FULL_ACCESS_TOKEN"'/g' FamilySync.Services.Authentication/NuGet.Config
 
 
 RUN dotnet restore "FamilySync.Services.Authentication/FamilySync.Services.Authentication.csproj"
