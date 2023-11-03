@@ -206,7 +206,6 @@ PublishScripts/
 *.nuget.props
 *.nuget.targets
 # dont share nuget secrets
-NuGet.config
 
 
 # Microsoft Azure Build Output
@@ -400,4 +399,3 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 .idea/.idea.FamilySync.Services.Registry/.idea/vcs.xml
-NuGet.Config
