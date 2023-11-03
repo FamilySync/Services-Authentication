@@ -1,0 +1,14 @@
+name: Publish docker container to Dockerhub
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+jobs:
+  build:
+    uses: familysync/core-pipelines/.github/workflows/dotnet-docker-publish.yaml@main
+    secrets: inherit
+    with:
+      repository: "familysync/authentication"
+      project: "FamilySync.Services.Authentication"
+      # deployment-path: "services/familysync/dev/authentication.yaml"
